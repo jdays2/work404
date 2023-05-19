@@ -1,0 +1,160 @@
+@font-face 
+  font-family: Gilroy
+  src: url(../../fonts/Gilroy-Regular.ttf)
+  font-display: swap
+
+@font-face 
+    font-family: 'Pragmatica'
+    src: url('../../fonts/PragmaticaExtended-Bold.woff2')
+    font-weight: 700
+    font-style: normal
+
+$nf-yellow: #FFCE55
+$nf-background: #47669D
+$nf-blue:#73B9DB
+$nf-pink:#EC87C1
+$nf-black: #434A54
+$nf-dark-blue: #292A34
+
+*,
+::after,
+::before 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html 
+  font-family: Gotham, sans-serif
+  font-size: 0.5208335vw
+  font-style: normal
+  font-weight: 400
+  -webkit-animation: 1s infinite bugfix
+  line-height: 1.2
+  margin: 0
+  padding: 0
+
+img
+  object-fit: contain
+
+body
+  width: 100%
+
+.not-found
+  width: 100%
+  padding-top: 11.9rem
+  display: flex
+  background-color: $nf-background
+  justify-content: space-between
+  &__message
+    margin-top: 8rem
+    font-family: 'Gilroy'
+    font-style: normal
+    display: flex
+    align-items: center
+    flex-direction: column
+    color: white
+  &__title
+    font-family: 'Pragmatica'
+    font-style: normal
+    font-weight: 800
+    font-size: 3rem
+    line-height: 3.4rem
+    margin-bottom: 2.5rem
+    text-transform: uppercase
+    letter-spacing: 0.065rem
+  &__subtitle
+    font-family: 'Gilroy'
+    font-style: normal
+    font-weight: 500
+    font-size: 2.2rem
+    line-height: 2.8rem
+    margin-bottom: 4.8rem
+    width: 53.3rem
+    text-align: center
+    letter-spacing: 0.001rem
+  &__error
+    font-family: 'Pragmatica'
+    font-weight: 800
+    font-size: 20rem
+    line-height: 120%
+  &__button
+    margin-left: 3rem
+    font-family: 'Pragmatica'
+    text-transform: uppercase
+    font-style: normal
+    font-weight: 500
+    font-size: 1.4rem
+    line-height: 1.8rem
+    background-color: white
+    color: $nf-dark-blue
+    width: 20.5rem
+    height: 6.8rem
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 0.6rem
+    cursor: pointer
+    border-radius: 100rem
+    &-icon
+      width: 2.4rem
+  .decoration
+    display: flex
+    align-items: center
+    width: 1.5rem
+    display: flex
+    gap: 1.465rem
+    flex-direction: column
+    &__item
+      width: 100%
+      height: 17.127rem
+      &--pink
+        background-color: $nf-pink
+      &--black
+        background-color: $nf-black
+      &--yellow
+        background-color: $nf-yellow
+      &--blue
+        background-color: $nf-blue
+
+@media (max-width: 48em)
+  html
+    font-size: 5px
+    font-size: 1.5625vw
+    font-size: 1.3333333333vw
+    -webkit-text-size-adjust: none
+  
+.not-found
+  width: 100%
+  padding-top: 16.4rem
+  .decoration
+    width: 1.6rem
+    gap: 2.228rem
+    &__item
+      width: 100%
+      height: 26.078rem
+  &__message
+    margin-top: 19rem
+  &__error
+    font-weight: 800
+    font-size: 24rem
+    line-height: 120%
+  &__title
+    font-weight: 800
+    font-size: 3.6rem
+    line-height: 120%
+  &__subtitle
+    font-weight: 500
+    width: 67rem
+    font-size: 3rem
+    line-height: 4.4rem
+    margin-bottom: 6.5rem
+  &__button
+    margin-left: 0
+    width: 36.2rem
+    height: 12.8rem
+    font-weight: 500
+    font-size: 2.6rem
+    line-height: 3.2rem
+    gap: 2rem
+    &-icon
+      width: 4.8rem
